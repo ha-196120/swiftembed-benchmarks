@@ -1,5 +1,5 @@
 ![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
-[![Latest release](https://img.shields.io/github/release/edlansiaux/swiftembed-benchmarks)](edlansiaux/swiftembed-benchmarks/releases)
+[![Latest release](https://img.shields.io/github/release/edlansiaux/swiftembed-benchmarks)](https://github.com/edlansiaux/swiftembed-benchmarks/releases)
 ![Release Date](https://img.shields.io/github/release-date/edlansiaux/swiftembed-benchmarks?color=9cf)
 [![License](https://img.shields.io/github/license/edlansiaux/swiftembed-benchmarks)](https://github.com/edlansiaux/swiftembed-benchmarks/blob/master/LICENSE)
 ![Downloads latest release](https://img.shields.io/github/downloads/edlansiaux/swiftembed-benchmarks/latest/total?color=yellow)
